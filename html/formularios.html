@@ -4,7 +4,35 @@
     2) method: Tem dois "verbos HTTP" padrões, o GET e POST que determina o caminho pelo qual o dados trafegarão. O padrão é GET
     3) enctype: Determina o conteúdo dos dados, falando de maneira fuleira é isso. O padrão é text/plain. Tem o multipart/form-data é o que segue binário(arquivo)
 -->
+<style>
+    output{
+        display: block;
+        min-height: 20px;
+        border-bottom: 3px red solid;
+        background: gray;
+        text-align: center;
+    }
+    input{
+        display: block!important;
+        width: 100%!important;
+        text-align: center                  ;
+    }
+</style>
+<script>
+    function soma(){
+        document.getElementById('resultado').value = parseInt(document.getElementById('in01').value)
+        +parseInt(document.getElementById('in02').value);
+    }
+</script>
+<form>
+    <output id="resultado"></output>
+     
+    <input id="in01" oninput="soma();" type="number" value="0">
 
+    <input id="in02" oninput="soma();" type="number" value="0">
+</form>
+
+<button onclick="alert('teste');">teste</button>
 <form>
     <label>
         Rotulo
