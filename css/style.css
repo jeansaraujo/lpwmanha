@@ -1,0 +1,27 @@
+p{
+    color:green;
+}
+[href="http://www.google.com"]{
+    font-size:50px;
+    text-decoration: none;
+    border-radius: 10px;
+    border:5px red solid; 
+    margin: 5px;
+}
+p:hover{
+    border-right: 5px red solid;
+    background-color: gray;
+}
+
+p a{
+    text-decoration: none;
+    margin: auto;
+    border-top: green dashed 6px;        
+}
+
+p span span{
+    border:dotted red 4px;
+    padding: 15px;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
