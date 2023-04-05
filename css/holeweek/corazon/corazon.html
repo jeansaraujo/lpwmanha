@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="corazon.css" />
+<div id="imagem">
+  <img onmouseover="sedeclare()" src="corazon.jpg" alt="Corazon Perdido" />
+</div>
+<!--x
+<div id="txt">
+  <span> Sem você, sem batimento ...</span>
+</div>
+-->
+<div id="txtChegada">
+  <span> Quando você passa por mim, meu coração acelera!</span>
+</div>
+<!--
+<div id="txtPartida">
+  <span> Não se vá!</span>
+</div>
+-->
+<script>
+  function sedeclare() {
+    document.getElementById("txtChegada").style.visibility = "visible";
+    // document.getElementById("txt").style.visibility = "hidden";
+  }
+  function ohno() {
+    document.getElementById("txtChegada").style.visibility = "hidden";
+    document.getElementById("txt").style.visibility = "hidden";
+    document.getElementById("txtPartida").style.visibility = "visible";
+  }
+</script>

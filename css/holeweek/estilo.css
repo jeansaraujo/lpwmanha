@@ -7,14 +7,14 @@ a {
   text-decoration: none;
   color: black;
   text-align: center;
-  transition: 2s;
+  transition: 1s;
 }
 p:hover,
 a:hover,
 div:hover {
   background-color: rgba(0, 0, 255, 0.2);
   border: 1px rgba(0, 0, 255, 0.2) solid;
-  animation: efeito;
+  animation: efeito 1s infinite;
 }
 
 @keyframes efeito {
@@ -22,8 +22,5 @@ div:hover {
     border: 3px rgb(255, 0, 0) solid;
     box-shadow: 0 0 0 1 0.4 blue;
     font-size: 20px;
-  }
-  50% {
-    color: red;
   }
 }

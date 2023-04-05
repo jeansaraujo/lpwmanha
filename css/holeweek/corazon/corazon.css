@@ -1,0 +1,42 @@
+#imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+}
+#txt {
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  font-size: 4em;
+  visibility: visible;
+}
+#txtChegada {
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  font-size: 4em;
+  visibility: hidden;
+}
+#txtPartida {
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  font-size: 4em;
+  visibility: hidden;
+}
+img:hover {
+  animation: amor 0.2s infinite;
+}
+@keyframes amor {
+  0% {
+    width: 50%;
+  }
+}
