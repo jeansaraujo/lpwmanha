@@ -1,0 +1,38 @@
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #caixa {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    rotate: 45deg;
+  }
+  #caixa:hover {
+    animation: giro 1s infinite;
+  }
+  @keyframes giro {
+    0% {
+      rotate: 15deg;
+    }
+    15% {
+      rotate: 30deg;
+    }
+    30% {
+      rotate: 45deg;
+    }
+    45% {
+      rotate: 60deg;
+    }
+    60% {
+      rotate: 75deg;
+    }
+    75% {
+      rotate: 90deg;
+    }
+  }
+</style>
+
+<div id="caixa"></div>
