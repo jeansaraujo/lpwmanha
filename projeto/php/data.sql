@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS lpwm;
+USE lpwm;
+CREATE TABLE IF NOT EXISTS bolsistas (
+    id INTEGER AUTO_INCREMENT, 
+    nome VARCHAR(200),
+    email VARCHAR(200),
+    senha VARCHAR(200),
+    PRIMARY KEY(id)
+);

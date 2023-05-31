@@ -1,0 +1,45 @@
+header {
+  height: 10vh;
+  background-color: lightgreen;
+  color: darkgray;
+  border-bottom: darkgray solid 5px;
+}
+main {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+footer {
+  height: 15vh;
+  background-color: darkgray;
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  width: 4em;
+  border-bottom: gray 1px solid;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  text-align: center;
+}
+.formulario {
+  width: 50%;
+}
+.formulario input {
+  display: block;
+  width: 100%;
+}
+.formulario button {
+  margin: 5px 0px;
+  float: right;
+}
