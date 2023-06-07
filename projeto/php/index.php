@@ -31,6 +31,9 @@
                 case "login":
                         include_once("pages/login.php");
                         break;
+                case "admin":
+                    include_once("pages/admin.php");
+                    break;
                 default:
                     include_once("pages/home.php");
                     break;
@@ -41,10 +44,14 @@
         }
 
         ?>
-        
+                
     </main>
     <footer>
-
+        <p style="text-align:center;">
+        <?php
+            print isset($_SESSION["email"])?$_SESSION["email"]:"deslogado";
+        ?>
+        </p>
     </footer>    
 </body>
 </html>
