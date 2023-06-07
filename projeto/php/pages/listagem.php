@@ -3,7 +3,7 @@
 </h1>
 
 <?php
-    $conexao = new PDO('mysql:host=localhost;dbname=lpwm', "root", "123456");
+    $conexao = new PDO('mysql:host=localhost;dbname=lpwm', "root", "ifpe");
     $listagem = $conexao->PREPARE("SELECT * FROM bolsista");
     $listagem->execute();
     $dados = $listagem->fetchAll(PDO::FETCH_ASSOC);
