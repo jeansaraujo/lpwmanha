@@ -23,7 +23,7 @@
         $email = $_POST["email"];
         $senha = $_POST["senha"];
         $conexao = new PDO('mysql:host=localhost;dbname=lpwm', "root", "ifpe");
-        $inserir = $conexao->PREPARE("INSERT INTO bolsista (nome,email,nascimento,senha)
+        $inserir = $conexao->PREPARE("INSERT INTO bolsistas (nome,email,nascimento,senha)
         VALUES (:NOME, :EMAIL, :NASCIMENTO, :SENHA)");
         $inserir->bindParam(":NOME",$nome);
         $inserir->bindParam(":EMAIL",$email);

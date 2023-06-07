@@ -4,7 +4,7 @@
 
 <?php
     $conexao = new PDO('mysql:host=localhost;dbname=lpwm', "root", "ifpe");
-    $listagem = $conexao->PREPARE("SELECT * FROM bolsista");
+    $listagem = $conexao->PREPARE("SELECT * FROM bolsistas");
     $listagem->execute();
     $dados = $listagem->fetchAll(PDO::FETCH_ASSOC);
     //print $dados[1]["email"];
