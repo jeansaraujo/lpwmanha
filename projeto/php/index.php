@@ -15,7 +15,7 @@
     </header>
     <main>
         <?php
-
+        session_start();
         if(isset($_GET["pagina"])){
             $pag = $_GET["pagina"];
             switch($pag){
@@ -31,7 +31,7 @@
                 case "login":
                         include_once("pages/login.php");
                         break;
-                case "admin":
+                case "admin":                    
                     include_once("pages/admin.php");
                     break;
                 default:

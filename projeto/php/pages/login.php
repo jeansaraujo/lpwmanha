@@ -24,11 +24,10 @@
         if($senha == $senhaBD){        
             print "Acesso área Exclusiva";
             print "<br>";
-            session_start();
-            //print session_id();
+            //session_start();
+            print session_id();
             $_SESSION['email']=$email;
             $_SESSION['hash']=session_id();
-            print $_SESSION['email'];
             //header("Location: http://localhost/ifpe2023lpwmanha/projeto/php/index.php?pagina=admin");
         }
         else{
